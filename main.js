@@ -33,6 +33,11 @@ bot.on('message', async msg => {
 			
 			msg.reply("I don't know :(");
 		} break;
+		
+		case '!say': {
+			const rest = msg.content.substr(5);
+			msg.channel.send(rest);
+		} break;
 	}
 });
 
