@@ -38,6 +38,11 @@ bot.on('message', async msg => {
 			const rest = msg.content.substr(5);
 			msg.channel.send(rest);
 		} break;
+		
+		case '!js': {
+			const rest = msg.content.substr(4);
+			msg.channel.send(eval(rest));
+		} break;
 	}
 });
 
