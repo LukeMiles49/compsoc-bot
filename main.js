@@ -41,7 +41,11 @@ bot.on('message', async msg => {
 		
 		case '!js': {
 			const rest = msg.content.substr(4);
-			msg.channel.send(eval(rest));
+			try {
+				msg.channel.send(eval(rest));
+			} catch (e) {
+				msg.channel.send(`\`\`\`\n${e}\n\`\`\``)
+			}
 		} break;
 	}
 });
