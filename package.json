@@ -1,0 +1,25 @@
+{
+  "name": "compsoc-bot",
+  "version": "1.0.0",
+  "description": "A bot created for fun at a university compsoc event",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukeMiles49/compsoc-bot.git"
+  },
+  "author": "Luke Miles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LukeMiles49/compsoc-bot/issues"
+  },
+  "homepage": "https://github.com/LukeMiles49/compsoc-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1",
+    "dotenv": "^8.2.0",
+    "oeis": "^1.0.2"
+  }
+}
